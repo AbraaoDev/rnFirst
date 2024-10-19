@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "expo start --tunnel",
+    "android": "expo start --android --tunnel",
+    "ios": "expo start --ios --tunnel",
+    "web": "expo start --web --tunnel"
   },
   "dependencies": {
     "expo": "~51.0.28",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@biomejs/biome": "^1.9.3",
     "@types/react": "~18.2.45",
     "typescript": "^5.1.3"
   },
